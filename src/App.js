@@ -31,11 +31,13 @@ function App() {
 
   return (
     <div>
+      <section>
       <header>
         <h1>EXPENSE TRACKER</h1>
       </header>
       <h2>Let's get started!</h2>
       <Expenses expenses={expenses} />
+      </section>
     </div>
   );
 }
