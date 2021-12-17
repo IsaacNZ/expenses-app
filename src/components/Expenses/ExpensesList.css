@@ -3,6 +3,10 @@
     padding: 0;
     margin: 0;
   }
+
+  .expenses-list li {
+    margin-top: 1.5rem;
+  }
   
   .expenses-list__fallback {
     color: white;
