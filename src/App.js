@@ -58,13 +58,21 @@ const App = () => {
     });
   };
 
+  const deleteExpenseHandler = (id) => {
+    setExpenses((prevState) => {
+      return prevState.filter((expense) => {
+        return expense.id !== id;
+      });
+    });
+  };
+
   return (
     <div>
       <header>
         <h1>EXPENSE TRACKER</h1>
       </header>
       <NewExpense onAddExpense={addExpenseHandler} />
-      <Expenses expenses={expenses} />
+      <Expenses expenses={expenses} onDeleteExpense={deleteExpenseHandler} />
     </div>
   );
 };

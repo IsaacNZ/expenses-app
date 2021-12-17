@@ -5,6 +5,11 @@ import Card from '../UI/Card';
 import ExpenseDate from './ExpenseDate';
 
 const ExpenseItem = (props) => {
+
+  const deleteExpenseHandler = () => {
+    props.onDeleteExpense(props.id)
+  }
+
   return (
     <li>
       <Card className="expense-item">
@@ -13,6 +18,7 @@ const ExpenseItem = (props) => {
           <h2>{props.title}</h2>
           <div className="expense-item__price">${props.amount}</div>
         </div>
+        <div className="delete-button" onClick={deleteExpenseHandler}>&times;</div>
       </Card>
     </li>
   );
