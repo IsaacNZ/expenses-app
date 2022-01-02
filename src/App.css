@@ -2,20 +2,11 @@ header {
   display: flex;
   justify-content: center;
   background-color: #59a0ff;
-  background-image: repeating-radial-gradient(
-    circle at 50%,
-    #ecedfb,
-    #ecedfb,
-    31px,
-    transparent 62px,
-    transparent 31px
-  );
-  background-blend-mode: multiply;
   box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
 }
 
 h1 {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   color: aliceblue;
   font-size: 5.5em;
   margin: 1rem 0;
